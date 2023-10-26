@@ -95,7 +95,6 @@ public:
 ```
 
 ### 21. Merge Two Sorted Lists <font color="Red"> -Unwatched </font>
-$${\color{red}Red}$$
 
 #### Example 1:
 
