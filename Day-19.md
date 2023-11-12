@@ -5,17 +5,26 @@ I am starting a 100-day LeetCode coding challenge. This journey is about consist
 : smiley : 
 
 
-### 476. Number Complement
+### 338. Counting Bits <font color="Red"> -Unwatched </font>
 #### Example 1:
 
-Input: num = 5\
-Output: 2\
-Explanation: The binary representation of 5 is 101 (no leading zero bits), and its complement is 010. So you need to output 2.
+Input: n = 2\
+Output: [0,1,1]\
+Explanation:\
+0 --> 0\
+1 --> 1\
+2 --> 10
 
 #### Example 2:
-Input: num = 1
-Output: 0
-Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
+Input: n = 5\
+Output: [0,1,1,2,1,2]\
+Explanation:\
+0 --> 0\
+1 --> 1\
+2 --> 10\
+3 --> 11\
+4 --> 100\
+5 --> 101
 ```bash
   Easy level coding questions
 ```
@@ -26,13 +35,22 @@ Explanation: The binary representation of 1 is 1 (no leading zero bits), and its
 ```javascript
 class Solution {
 public:
-    int findComplement(int num) {
-        long k=1;
-        while(k<=num){
-            num^=k;
-            k*=2;
+    vector<int> countBits(int n) {
+        vector<int>v1;
+        for(int i=0; i<=n; i++){
+            int count = 0;
+            int test = i;
+            while(test>0){
+                if(test%2==1){
+                    count++;
+                    test/=2;
+                }else{
+                    test/=2;
+                }
+            }
+            v1.push_back(count);
         }
-        return num;
+        return v1;
     }
 };
 ```
