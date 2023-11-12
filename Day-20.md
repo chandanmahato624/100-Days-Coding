@@ -5,17 +5,19 @@ I am starting a 100-day LeetCode coding challenge. This journey is about consist
 : smiley : 
 
 
-### 476. Number Complement
+### 2828. Check if a String Is an Acronym of Words <font color="Red"> -Unwatched </font>
 #### Example 1:
 
-Input: num = 5\
-Output: 2\
-Explanation: The binary representation of 5 is 101 (no leading zero bits), and its complement is 010. So you need to output 2.
+Input: words = ["alice","bob","charlie"], s = "abc"\
+Output: true\
+Explanation: The first character in the words "alice", "bob", and "charlie" are 'a', 'b', and 'c', respectively. Hence, s = "abc" is the acronym.
 
 #### Example 2:
-Input: num = 1
-Output: 0
-Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
+Input: words = ["an","apple"], s = "a"\
+Output: false\
+Explanation: The first character in the words "an" and "apple" are 'a' and 'a', respectively. 
+The acronym formed by concatenating these characters is "aa". 
+Hence, s = "a" is not the acronym.
 ```bash
   Easy level coding questions
 ```
@@ -26,13 +28,18 @@ Explanation: The binary representation of 1 is 1 (no leading zero bits), and its
 ```javascript
 class Solution {
 public:
-    int findComplement(int num) {
-        long k=1;
-        while(k<=num){
-            num^=k;
-            k*=2;
+    bool isAcronym(vector<string>& words, string s) {
+       string str="";
+        int n=words.size();
+        for(int i=0;i<n;i++)
+        {
+            string str1=words[i];
+            str.push_back(str1[0]);
         }
-        return num;
+        if(s==str)
+            return true;
+        else
+            return false; 
     }
 };
 ```
