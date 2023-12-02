@@ -1,0 +1,4 @@
+## #Day27/100 01-12-23
+
+Resuming my 100-day LeetCode coding challenge journey after a brief pause. Life threw some unexpected challenges my way, causing a temporary halt at day 26 on November 14th. However, I'm back with a renewed determination to conquer the remaining days. This endeavor is more than just solving coding problems; it's a testament to resilience, growth, and the unwavering pursuit of improvement. Each day, I'll delve into a new coding challenge, eager to unravel its intricacies and emerge not only as a stronger coder but as someone who embraces setbacks as opportunities for comebacks. Join me as I pick up where I left off, pushing boundaries, and scripting a narrative of consistency and self-discovery. The adventure lies in the code, and the rewards are the milestones achieved along the way. Let's code on, for the journey continues, and the best version of myself is waiting to be realized.. ☺️
+: smiley : 
